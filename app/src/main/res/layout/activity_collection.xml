@@ -1,0 +1,64 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="java.util.Map"/>
+
+        <import type="java.util.List"/>
+
+        <variable
+            name="list"
+            type="List&lt;String>"/>
+
+        <variable
+            name="map"
+            type="Map&lt;String,String>"/>
+
+        <variable
+            name="index"
+            type="int"/>
+
+        <variable
+            name="key"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_collection"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="wxb.com.mvvmdemo.ui.CollectionActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="list[index]:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{list[index]}"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="map[key]:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{map[key]}"/>
+
+    </LinearLayout>
+
+</layout>

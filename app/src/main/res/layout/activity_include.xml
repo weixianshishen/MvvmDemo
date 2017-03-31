@@ -1,0 +1,43 @@
+<layout xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="wxb.com.mvvmdemo.bean.User"/>
+
+        <variable
+            name="OkStr"
+            type="String"/>
+
+        <variable
+            name="listener"
+            type="wxb.com.mvvmdemo.ui.adapter.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/activity_include"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/et_input"
+            layout="@layout/layout_input"/>
+
+        <include
+            layout="@layout/layout_user"
+            bind:user="@{user}"
+            />
+
+        <include
+            layout="@layout/layout_button"
+            bind:OkStr="@{OkStr}"
+            bind:listener="@{listener}"
+            />
+
+    </LinearLayout>
+
+</layout>
