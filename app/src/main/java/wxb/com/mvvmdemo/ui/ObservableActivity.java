@@ -14,7 +14,6 @@ import wxb.com.mvvmdemo.databinding.ActivityObservableBinding;
 
 public class ObservableActivity extends AppCompatActivity {
 
-
     public static void newInstance(Context context) {
         context.startActivity(new Intent(context, ObservableActivity.class));
     }

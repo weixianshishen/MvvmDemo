@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MvvmDemo.iml" filepath="$PROJECT_DIR$/MvvmDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_mvc/app_mvc.iml" filepath="$PROJECT_DIR$/app_mvc/app_mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_mvp/app_mvp.iml" filepath="$PROJECT_DIR$/app_mvp/app_mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_mvvm/app_mvvm.iml" filepath="$PROJECT_DIR$/app_mvvm/app_mvvm.iml" />
     </modules>
   </component>
 </project>
